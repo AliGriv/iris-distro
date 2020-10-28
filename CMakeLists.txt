@@ -42,8 +42,8 @@ set(IRIS_DEPENDENCIES)
 if(IRIS_WITH_EIGEN)
   ExternalProject_Add(eigen3
     DOWNLOAD_DIR "${CMAKE_CURRENT_BINARY_DIR}/eigen3-download"
-    URL https://bitbucket.org/eigen/eigen/get/3.3.3.tar.gz
-    URL_HASH SHA256=94878cbfa27b0d0fbc64c00d4aafa137f678d5315ae62ba4aecddbd4269ae75f
+          URL https://gitlab.com/libeigen/eigen/-/archive/3.3.8/eigen-3.3.8.tar.gz
+          #            URL_HASH SHA256=94878cbfa27b0d0fbc64c00d4aafa137f678d5315ae62ba4aecddbd4269ae75f
     TLS_VERIFY 1
     SOURCE_DIR "${CMAKE_CURRENT_BINARY_DIR}/eigen3-src"
     CMAKE_ARGS
